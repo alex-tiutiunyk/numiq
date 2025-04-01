@@ -1,9 +1,12 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  output: "export",
+  // output: "export",
   basePath: "/numiq",
   assetPrefix: "/numiq",
+  images: {
+    unoptimized: true,
+  },
 };
 
 export default nextConfig;
