@@ -1,0 +1,120 @@
+[
+  {
+    "titleSection": "Demolition work Price",
+    "dataUpdated": "2025-04-01T07:05:09.686Z",
+    "id": 1,
+    "isBlockOpen": true,
+    "rows": [
+      {
+        "id": "1-1",
+        "title": "Demolition of partitions - brick",
+        "textTooltip": "",
+        "url": "/construction-works/demolition-of-partitions-brick",
+        "price": 26.7,
+        "units": "m²",
+        "visibleWhenLogin": false,
+        "visibleWhenProfi": false,
+        "checkbox": false
+      },
+      {
+        "id": "1-2",
+        "title": "Demolition of the old pedestal toilet screen",
+        "textTooltip": "",
+        "url": "/construction-works/demolition-of-the-old-riser-toilet-partition-wall",
+        "price": 90.2,
+        "units": "psc",
+        "visibleWhenLogin": false,
+        "visibleWhenProfi": false,
+        "checkbox": false
+      },
+      {
+        "id": "1-3",
+        "title": "Demolition of the old kitchen unit",
+        "textTooltip": "",
+        "url": "/construction-works/demolition-of-the-old-kitchen-unit",
+        "price": 119.6,
+        "units": "psc",
+        "visibleWhenLogin": false,
+        "visibleWhenProfi": false,
+        "checkbox": false
+      },
+      {
+        "id": "1-4",
+        "title": "Demolition of metal frames (concrete)",
+        "textTooltip": "",
+        "url": "/construction-works/demolition-of-metal-door-frames-concrete",
+        "price": 53.4,
+        "units": "psc",
+        "visibleWhenLogin": false,
+        "visibleWhenProfi": false,
+        "checkbox": false
+      },
+      {
+        "id": "1-5",
+        "title": "Dismantling the built-in cabinet",
+        "textTooltip": "",
+        "url": "/construction-works/demolition-of-a-built-in-wardrobe",
+        "price": 92,
+        "units": "psc",
+        "visibleWhenLogin": false,
+        "visibleWhenProfi": false,
+        "checkbox": false
+      },
+      {
+        "id": "1-6",
+        "title": "Pulling out the old floating floor (parquet, linoleum)",
+        "textTooltip": "",
+        "url": "/construction-works",
+        "price": 3.5,
+        "units": "m²",
+        "visibleWhenLogin": false,
+        "visibleWhenProfi": false,
+        "checkbox": false
+      },
+      {
+        "id": "1-7",
+        "title": "Dismantling the umakart core",
+        "textTooltip": "",
+        "url": "",
+        "price": 3.5,
+        "units": "psc",
+        "visibleWhenLogin": true,
+        "visibleWhenProfi": false,
+        "checkbox": true
+      },
+      {
+        "id": "1-8",
+        "title": "Removing the tub",
+        "textTooltip": "",
+        "url": "",
+        "price": 101.2,
+        "units": "psc",
+        "visibleWhenLogin": false,
+        "visibleWhenProfi": false,
+        "checkbox": false
+      },
+      {
+        "id": "1-9",
+        "title": "Dismantling the sink",
+        "textTooltip": "",
+        "url": "",
+        "price": 46,
+        "units": "psc",
+        "visibleWhenLogin": false,
+        "visibleWhenProfi": false,
+        "checkbox": false
+      },
+      {
+        "id": "1-10",
+        "title": "Other unspecified jobs in this field (Hourly wage)",
+        "textTooltip": "Works whose value cannot be determined by unit price (not listed in the price list above) are calculated at an hourly rate. If the work is non-standard, for example masonry of non-standard dimensions, painting of broken walls, etc. use the hourly rate.",
+        "url": "",
+        "price": 46,
+        "units": "hours",
+        "visibleWhenLogin": false,
+        "visibleWhenProfi": false,
+        "checkbox": false
+      }
+    ]
+  }
+]

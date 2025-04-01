@@ -1,0 +1,185 @@
+@import "tailwindcss";
+
+:root {
+  --gray-10: 244, 244, 244; /* #f4f4f4 */
+  --gray-15: 216, 216, 216; /* #d8d8d8 */
+  --gray-20: 211, 211, 211; /* #d3d3d3 */
+  --gray-30: 199, 199, 199; /* #c7c7c7 */
+  --gray-40: 159, 159, 159; /* #9f9f9f */
+  --gray-50: 108, 113, 118; /* #6c7176 */
+  --gray-100: 65, 65, 65; /* #414141 */
+  --gray-150: 61, 61, 61; /* #3d3d3d */
+  --gray-160: 53, 53, 53; /*#35355*/
+  --gray-200: 52, 53, 54; /*#343536*/
+  --gray-300: 52, 58, 64; /*#343a40*/
+  --gray-400: 49, 52, 56; /*#313438*/
+  --gray-500: 40, 40, 40; /* #282828 */
+  --gray-600: 40, 44, 48; /* #282c30 */
+  --gray-700: 36, 41, 45; /*#24292d*/
+  --gray-750: 20, 20, 20; /* #141414 */
+  --gray-800: 17, 17, 17; /* #111 */
+  --gray-900: 28, 30, 31; /* #1c1e1f */
+
+  --orange: 255, 140, 0; /* #ff8c00 */
+
+  --red: 255, 0, 0; /* #f00 */
+
+  --red-dark: 139, 0, 0; /* #8b0000 */
+
+  --font_default: "Roboto";
+  --font_bTszu_default: "Roboto";
+  --font_bTszv_default: "Montserrat";
+  --color_text_default: rgba(36, 41, 45, 1);
+  --color_text_default_rgb: 36, 41, 45;
+  --color_primary_default: rgba(0, 117, 255, 1);
+  --color_primary_default_rgb: 0, 117, 255;
+  --color_success_default: rgba(23, 219, 78, 1);
+  --color_success_default_rgb: 23, 219, 78;
+  --color_surface_default: rgba(255, 255, 255, 1);
+  --color_surface_default_rgb: 255, 255, 255;
+  --color_background_default: rgba(255, 255, 255, 1);
+  --color_background_default_rgb: 255, 255, 255;
+  --color_destructive_default: rgba(152, 14, 0, 1);
+  --color_destructive_default_rgb: 152, 14, 0;
+  --color_primary_contrast_default: rgba(255, 255, 255, 1);
+  --color_primary_contrast_default_rgb: 255, 255, 255;
+  --color_bTszb_default: rgba(26, 27, 32, 1);
+  --color_bTszb_default_rgb: 26, 27, 32;
+  --color_bTszc_default: rgba(250, 181, 21, 1);
+  --color_bTszc_default_rgb: 250, 181, 21;
+  --color_bTszd_default: rgba(67, 94, 145, 1);
+  --color_bTszd_default_rgb: 67, 94, 145;
+  --color_bTszh_default: rgba(23, 219, 78, 1);
+  --color_bTszh_default_rgb: 23, 219, 78;
+  --color_bTszi_default: rgba(255, 255, 255, 1);
+  --color_bTszi_default_rgb: 255, 255, 255;
+  --color_bTszj_default: rgba(249, 249, 255, 1);
+  --color_bTszj_default_rgb: 249, 249, 255;
+  --color_bTszn_default: rgba(255, 0, 0, 1);
+  --color_bTszn_default_rgb: 255, 0, 0;
+  --color_bTszo_default: rgba(255, 255, 255, 1);
+  --color_bTszo_default_rgb: 255, 255, 255;
+  --color_bTszp_default: rgba(219, 226, 249, 1);
+  --color_bTszp_default_rgb: 219, 226, 249;
+  --color_bTszt_default: rgba(196, 198, 208, 1);
+  --color_bTszt_default_rgb: 196, 198, 208;
+  --color_bTHBQ1_default: rgba(159, 159, 159, 1);
+  --color_bTHBQ1_default_rgb: 159, 159, 159;
+  --color_bTHEE1_default: rgba(28, 30, 31, 1);
+  --color_bTHEE1_default_rgb: 28, 30, 31;
+  --color_bTorb0_default: rgba(199, 199, 199, 1);
+  --color_bTorb0_default_rgb: 199, 199, 199;
+  --color_bTplT1_default: rgba(68, 68, 68, 1);
+  --color_bTplT1_default_rgb: 68, 68, 68;
+  --color_bTpmD1_default: rgba(52, 58, 64, 1);
+  --color_bTpmD1_default_rgb: 52, 58, 64;
+}
+
+@theme {
+  --color-brand-gray-10: rgb(var(--gray-10));
+  --color-brand-gray-15: rgb(var(--gray-15));
+  --color-brand-gray-20: rgb(var(--gray-20));
+  --color-brand-gray-30: rgb(var(--gray-30));
+  --color-brand-gray-40: rgb(var(--gray-40));
+  --color-brand-gray-50: rgb(var(--gray-50));
+  --color-brand-gray-100: rgb(var(--gray-100));
+  --color-brand-gray-150: rgb(var(--gray-150));
+  --color-brand-gray-160: rgb(var(--gray-160));
+  --color-brand-gray-200: rgb(var(--gray-200));
+  --color-brand-gray-300: rgb(var(--gray-300));
+  --color-brand-gray-400: rgb(var(--gray-400));
+  --color-brand-gray-500: rgb(var(--gray-500));
+  --color-brand-gray-600: rgb(var(--gray-600));
+  --color-brand-gray-700: rgb(var(--gray-700));
+  --color-brand-gray-750: rgb(var(--gray-750));
+  --color-brand-gray-800: rgb(var(--gray-800));
+  --color-brand-gray-900: rgb(var(--gray-900));
+
+  --color-brand-orange: rgb(var(--orange));
+  --color-brand-red: rgb(var(--red));
+  --color-brand-red-dark: rgb(var(--red-dark));
+
+  --shadow-b-1: 0 0 4px 2px rgb(var(--orange), 0.5);
+  --shadow-b-2: 0 0 1px 5px rgb(var(--orange), 0.314);
+
+  --animate-ring: ring 0.3s;
+
+  @keyframes ring {
+    0% {
+      transform: rotate(-15deg);
+    }
+    25% {
+      transform: rotate(15deg);
+    }
+    50% {
+      transform: rotate(-15deg);
+    }
+    100% {
+      transform: rotate(15deg);
+    }
+  }
+}
+
+@layer components {
+  /* components styles */
+}
+
+@layer base {
+  /* base styles */
+  /* clears the 'X' from Internet Explorer */
+  input[type="search"]::-ms-clear,
+  input[type="search"]::-ms-reveal {
+    display: none;
+    width: 0;
+    height: 0;
+  }
+
+  /* clears the 'X' from Chrome */
+  input[type="search"]::-webkit-search-decoration,
+  input[type="search"]::-webkit-search-cancel-button,
+  input[type="search"]::-webkit-search-results-button,
+  input[type="search"]::-webkit-search-results-decoration {
+    display: none;
+  }
+
+  input[type="number"] {
+    -moz-appearance: textfield;
+    appearance: textfield;
+  }
+
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+  }
+
+  a {
+    color: var(--orange);
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  p {
+    margin: 0 0 16px;
+  }
+
+  strong {
+    font-weight: bold;
+  }
+
+  .aria-invisible {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
