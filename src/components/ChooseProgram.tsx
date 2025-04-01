@@ -1,6 +1,6 @@
 "use client";
 
-import { cn } from "@/utils/cn";
+import { basePath, cn } from "@/utils";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -73,7 +73,12 @@ const ChooseProgram: React.FC = () => {
         </footer>
       </div>
       <div className="grow pt-8">
-        <Image width={486} height={320} alt="" src="/images/top-kalk.png" />
+        <Image
+          width={486}
+          height={320}
+          alt=""
+          src={`${basePath}/images/top-kalk.png`}
+        />
       </div>
     </section>
   );

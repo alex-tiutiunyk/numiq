@@ -1,3 +1,4 @@
+import { basePath } from "@/utils";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -7,7 +8,12 @@ const Header: React.FC = () => {
     <header className="bg-brand-gray-700">
       <div className="mx-auto flex max-w-[1140px] items-center justify-between px-[15px]">
         <Link href="/" className="transition hover:opacity-90">
-          <Image src="images/logo.svg" width={150} height={63} alt="Numic" />
+          <Image
+            src={`${basePath}/images/logo.svg`}
+            width={150}
+            height={63}
+            alt="Numic"
+          />
         </Link>
         <div className="flex items-center leading-[1]">
           <nav>
@@ -51,7 +57,7 @@ const Header: React.FC = () => {
                   <Image
                     width={16}
                     height={18}
-                    src="icons/bell.svg"
+                    src={`${basePath}/icons/bell.svg`}
                     alt="Items"
                     className="group-hover:animate-ring"
                   />
