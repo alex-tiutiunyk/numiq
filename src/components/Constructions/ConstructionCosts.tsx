@@ -1,5 +1,5 @@
 import React from "react";
-import data from "../db.json";
+import data from "../../db.json";
 import ConstructionBlock from "./ConstructionBlock";
 import { IData } from "@/types/data";
 

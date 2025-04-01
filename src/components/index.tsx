@@ -1,15 +1,17 @@
 import Header from "./Header";
 import ChooseProgram from "./ChooseProgram";
 import Search from "./Search";
-import ConstructionCosts from "./ConstructionCosts";
-import ConstructionRow from "./ConstructionRow";
-import ConstructionTitle from "./ConstructionTitle";
-import ConstructionRows from "./ConstructionRows";
+import ConstructionBlock from "./Constructions/ConstructionBlock";
+import ConstructionCosts from "./Constructions/ConstructionCosts";
+import ConstructionRow from "./Constructions/ConstructionRow";
+import ConstructionTitle from "./Constructions/ConstructionTitle";
+import ConstructionRows from "./Constructions/ConstructionRows";
 
 export {
   ChooseProgram,
   Header,
   Search,
+  ConstructionBlock,
   ConstructionCosts,
   ConstructionRow,
   ConstructionTitle,
