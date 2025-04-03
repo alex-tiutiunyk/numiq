@@ -6,6 +6,7 @@ import ConstructionCosts from "./Constructions/ConstructionCosts";
 import ConstructionRow from "./Constructions/ConstructionRow";
 import ConstructionTitle from "./Constructions/ConstructionTitle";
 import ConstructionRows from "./Constructions/ConstructionRows";
+import SmartTooltip from "./ui/SmartTooltip";
 
 export {
   ChooseProgram,
@@ -16,4 +17,5 @@ export {
   ConstructionRow,
   ConstructionTitle,
   ConstructionRows,
+  SmartTooltip,
 };

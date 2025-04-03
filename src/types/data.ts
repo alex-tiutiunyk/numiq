@@ -13,7 +13,7 @@ export interface IRow {
 export interface IData {
   titleSection: string;
   dataUpdated: string;
-  id: number;
+  id: string;
   isBlockOpen: boolean;
   rows: IRow[];
 }

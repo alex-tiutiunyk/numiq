@@ -14,7 +14,8 @@
         "units": "m²",
         "visibleWhenLogin": false,
         "visibleWhenProfi": false,
-        "checkbox": false
+        "checkbox": false,
+        "checkboxStatus": false
       },
       {
         "id": "1-2",
@@ -25,7 +26,8 @@
         "units": "psc",
         "visibleWhenLogin": false,
         "visibleWhenProfi": false,
-        "checkbox": false
+        "checkbox": false,
+        "checkboxStatus": false
       },
       {
         "id": "1-3",
@@ -36,7 +38,8 @@
         "units": "psc",
         "visibleWhenLogin": false,
         "visibleWhenProfi": false,
-        "checkbox": false
+        "checkbox": false,
+        "checkboxStatus": false
       },
       {
         "id": "1-4",
@@ -47,7 +50,8 @@
         "units": "psc",
         "visibleWhenLogin": false,
         "visibleWhenProfi": false,
-        "checkbox": false
+        "checkbox": false,
+        "checkboxStatus": false
       },
       {
         "id": "1-5",
@@ -58,7 +62,8 @@
         "units": "psc",
         "visibleWhenLogin": false,
         "visibleWhenProfi": false,
-        "checkbox": false
+        "checkbox": false,
+        "checkboxStatus": false
       },
       {
         "id": "1-6",
@@ -69,7 +74,8 @@
         "units": "m²",
         "visibleWhenLogin": false,
         "visibleWhenProfi": false,
-        "checkbox": false
+        "checkbox": false,
+        "checkboxStatus": false
       },
       {
         "id": "1-7",
@@ -80,7 +86,8 @@
         "units": "psc",
         "visibleWhenLogin": true,
         "visibleWhenProfi": false,
-        "checkbox": true
+        "checkbox": true,
+        "checkboxStatus": false
       },
       {
         "id": "1-8",
@@ -91,7 +98,8 @@
         "units": "psc",
         "visibleWhenLogin": false,
         "visibleWhenProfi": false,
-        "checkbox": false
+        "checkbox": false,
+        "checkboxStatus": false
       },
       {
         "id": "1-9",
@@ -102,7 +110,8 @@
         "units": "psc",
         "visibleWhenLogin": false,
         "visibleWhenProfi": false,
-        "checkbox": false
+        "checkbox": false,
+        "checkboxStatus": false
       },
       {
         "id": "1-10",
@@ -110,10 +119,11 @@
         "textTooltip": "Works whose value cannot be determined by unit price (not listed in the price list above) are calculated at an hourly rate. If the work is non-standard, for example masonry of non-standard dimensions, painting of broken walls, etc. use the hourly rate.",
         "url": "",
         "price": 46,
-        "units": "hours",
-        "visibleWhenLogin": false,
+        "units": "hour",
+        "visibleWhenLogin": true,
         "visibleWhenProfi": false,
-        "checkbox": false
+        "checkbox": false,
+        "checkboxStatus": false
       }
     ]
   }
