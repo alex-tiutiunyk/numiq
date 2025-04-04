@@ -12,7 +12,7 @@ interface TooltipArrowPosition {
 }
 
 interface SmartTooltipProps {
-  tooltipWrapRef: HTMLDivElement | null;
+  tooltipWrapRef: React.RefObject<HTMLDivElement>;
   title?: string;
 }
 
@@ -83,7 +83,7 @@ const SmartTooltip: React.FC<SmartTooltipProps> = ({
       <span
         ref={tooltipRef}
         style={tooltipPosition}
-        className={`invisible fixed left-0 mb-3 min-w-[250px] rounded-[3px] bg-black px-2.5 py-1.5 text-left text-sm font-normal text-white opacity-0 transition group-hover:visible group-hover:opacity-100`}
+        className={`invisible fixed left-0 mb-3 min-w-[250px] rounded-[3px] bg-black px-2.5 py-1.5 text-left text-sm font-normal text-white opacity-0 shadow-lg transition group-hover:visible group-hover:opacity-100`}
       >
         {title}
         <span

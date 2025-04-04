@@ -1,15 +1,21 @@
-import { ChooseProgram, Header, Search, ConstructionCosts } from "@/components";
+import {
+  Header,
+  Footer,
+  ChooseProgram,
+  Search,
+  ConstructionCosts,
+} from "@/components";
 
 export default function Home() {
   return (
     <>
       <Header />
-      <main className="mx-auto max-w-[1140px] px-[15px]">
+      <main className="mx-auto w-full max-w-[1140px] grow px-[15px] pb-[105px]">
         <ChooseProgram />
         <Search />
         <ConstructionCosts />
       </main>
-      <div className="h-[1500px]"></div>
+      <Footer />
     </>
   );
 }

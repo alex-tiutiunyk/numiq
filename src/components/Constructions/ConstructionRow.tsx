@@ -12,7 +12,7 @@ interface ConstructionRowProps {
 const ConstructionRow: React.FC<ConstructionRowProps> = ({ row }) => {
   const { price, title, url, units } = row;
 
-  const tooltipWrapRef = React.useRef<HTMLDivElement | null>(null);
+  const tooltipWrapRef = React.useRef<HTMLDivElement>(null!);
 
   const [inputValue, setInputValue] = React.useState<string>("");
   const [totalPrice, setTotalPrice] = React.useState<string>("0");
@@ -60,7 +60,7 @@ const ConstructionRow: React.FC<ConstructionRowProps> = ({ row }) => {
             href="/registration"
             className="group bg-brand-gray-50 hover:bg-brand-orange relative mx-auto -my-2 flex h-9 max-w-[50px] justify-center rounded-[3px] [background-size:18px_36px] transition after:my-auto after:h-4.5 after:w-4.5 after:bg-[url('../../public/icons/lock.png')] after:content-[''] hover:after:[background-position:_0_-18px]"
           >
-            <span className="invisible absolute bottom-full left-[50%] mb-3 min-w-[250px] transform-[translateX(-50%)] rounded-[3px] bg-white px-2.5 py-1.5 text-left text-sm text-black opacity-0 transition group-hover:visible group-hover:opacity-100 after:absolute after:top-full after:left-[50%] after:-mt-1 after:-ml-1 after:h-5 after:w-5 after:transform-[rotate(45deg)_translateX(-50%)] after:bg-white after:content-['']">
+            <span className="invisible absolute bottom-full left-[50%] mb-3 min-w-[250px] transform-[translateX(-50%)] rounded-[3px] bg-white px-2.5 py-1.5 text-left text-sm text-black opacity-0 shadow-lg transition group-hover:visible group-hover:opacity-100 after:absolute after:top-full after:left-[50%] after:-mt-1 after:-ml-1 after:h-5 after:w-5 after:transform-[rotate(45deg)_translateX(-50%)] after:bg-white after:content-['']">
               Please log in or register to view LOCKED items.
             </span>
           </Link>
@@ -77,6 +77,7 @@ const ConstructionRow: React.FC<ConstructionRowProps> = ({ row }) => {
               type="number"
               placeholder="0"
               value={inputValue}
+              max={99999}
               onChange={(event) => handleChange(event)}
               className="placeholder:text-brand-gray-100 text-brand-gray-100 group-hover/row:bg-brand-gray-10 w-[80px] rounded-l-[3px] bg-white p-2 text-center text-sm focus:outline-0"
             />
@@ -100,12 +101,14 @@ const ConstructionRow: React.FC<ConstructionRowProps> = ({ row }) => {
             className="group bg-brand-gray-50 hover:bg-brand-orange relative mx-auto -my-2 block h-9 max-w-[120px] rounded-[3px] leading-[36px] font-bold text-white transition after:mt-2 after:ml-2 after:inline-block after:h-4 after:w-4 after:bg-[url('../../public/icons/help.png')] after:[background-size:32px_16px] after:align-top after:content-[''] hover:no-underline"
           >
             LOCKED
-            <span className="invisible absolute right-0 bottom-full mb-3 min-w-[250px] rounded-[3px] bg-white px-2.5 py-1.5 text-left text-sm font-normal text-black opacity-0 transition group-hover:visible group-hover:opacity-100 after:absolute after:top-full after:right-[52px] after:-mt-3 after:h-5 after:w-5 after:transform-[rotate(45deg)] after:bg-white after:content-['']">
+            <span className="invisible absolute right-0 bottom-full mb-3 min-w-[250px] rounded-[3px] bg-white px-2.5 py-1.5 text-left text-sm font-normal text-black opacity-0 shadow-lg transition group-hover:visible group-hover:opacity-100 after:absolute after:top-full after:right-[52px] after:-mt-3 after:h-5 after:w-5 after:transform-[rotate(45deg)] after:bg-white after:content-['']">
               Please log in or register to view LOCKED items.
             </span>
           </Link>
         ) : (
-          totalPrice + "£"
+          <div className="maw-w-[90%] overflow-x-auto whitespace-nowrap [scrollbar-width:thin]">
+            {totalPrice + " £"}
+          </div>
         )}
       </div>
     </div>

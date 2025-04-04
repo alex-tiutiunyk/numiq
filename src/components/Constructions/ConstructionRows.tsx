@@ -15,9 +15,20 @@ const ConstructionRows: React.FC<ConstructionRowsProps> = ({
   isOpen,
   setIsOpen,
 }) => {
+  const [overflowHidden, setOverflowHidden] = React.useState<boolean>(isOpen);
+
   const handleToggle: () => void = React.useCallback(() => {
     setIsOpen((prev) => !prev);
   }, [setIsOpen]);
+
+  React.useEffect(() => {
+    if (isOpen) {
+      const timer = setTimeout(() => setOverflowHidden(false), 1000);
+      return () => clearTimeout(timer);
+    } else {
+      setOverflowHidden(true);
+    }
+  }, [isOpen]);
 
   return (
     <div className="relative">
@@ -30,7 +41,7 @@ const ConstructionRows: React.FC<ConstructionRowsProps> = ({
           initial={false}
           animate={{ height: isOpen ? "auto" : 0, opacity: isOpen ? 1 : 0 }}
           transition={{ duration: 0.4, ease: "easeInOut" }}
-          className="overflow-hidden"
+          className={overflowHidden ? "overflow-hidden" : ""}
         >
           {rows.slice(2).map((row) => (
             <ConstructionRow key={row.id} row={row} />

@@ -11,7 +11,7 @@ const Search: React.FC = () => {
         <input
           type="search"
           placeholder="Search"
-          className="focus:bg-brand-gray-15 w-full rounded-[3px] bg-white p-[8px_45px_8px_10px] leading-6 text-black focus:outline-0"
+          className="focus:shadow-b-2 w-full rounded-[3px] bg-white p-[8px_45px_8px_10px] leading-6 text-black focus:outline-0"
         />
       </fieldset>
     </form>

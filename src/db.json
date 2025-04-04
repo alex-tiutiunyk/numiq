@@ -2,7 +2,7 @@
   {
     "titleSection": "Demolition work Price",
     "dataUpdated": "2025-04-01T07:05:09.686Z",
-    "id": 1,
+    "id": "1",
     "isBlockOpen": true,
     "rows": [
       {
@@ -119,6 +119,226 @@
         "textTooltip": "Works whose value cannot be determined by unit price (not listed in the price list above) are calculated at an hourly rate. If the work is non-standard, for example masonry of non-standard dimensions, painting of broken walls, etc. use the hourly rate.",
         "url": "",
         "price": 46,
+        "units": "hour",
+        "visibleWhenLogin": true,
+        "visibleWhenProfi": false,
+        "checkbox": false,
+        "checkboxStatus": false
+      }
+    ]
+  },
+  {
+    "titleSection": "Concrete cutting Price",
+    "dataUpdated": "2025-04-01T07:05:09.686Z",
+    "id": "2",
+    "isBlockOpen": true,
+    "rows": [
+      {
+        "id": "2-1",
+        "title": "Cutting of reinforced concrete panel (openings, windows, doors) up to 10 cm",
+        "textTooltip": "",
+        "url": "",
+        "price": 73.6,
+        "units": "bm",
+        "visibleWhenLogin": false,
+        "visibleWhenProfi": false,
+        "checkbox": false,
+        "checkboxStatus": false
+      },
+      {
+        "id": "2-2",
+        "title": "Cutting of reinforced concrete panel (openings, windows, doors) up to 15 cm",
+        "textTooltip": "If you want to cut a door opening into a load-bearing reinforced concrete panel (approx. 15-20 cm), you must count on 10 standard meters of cutting.",
+        "url": "",
+        "price": 73.6,
+        "units": "bm",
+        "visibleWhenLogin": true,
+        "visibleWhenProfi": false,
+        "checkbox": false,
+        "checkboxStatus": false
+      },
+      {
+        "id": "2-3",
+        "title": "Installation of steel support structure in a concrete cut-out",
+        "textTooltip": "A frame steel structure made of I, U, L profiles will be inserted into a cut-out in the load-bearing wall with dimensions up to 220 x 120 cm. It is necessary to connect it statically to the load-bearing wall through steel plates - wedges.",
+        "url": "",
+        "price": 73.6,
+        "units": "psc",
+        "visibleWhenLogin": true,
+        "visibleWhenProfi": false,
+        "checkbox": false,
+        "checkboxStatus": false
+      },
+      {
+        "id": "2-4",
+        "title": "Cutting metal frames into a reinforced concrete panel up to 10 cm",
+        "textTooltip": "",
+        "url": "",
+        "price": 220.8,
+        "units": "psc",
+        "visibleWhenLogin": false,
+        "visibleWhenProfi": false,
+        "checkbox": false,
+        "checkboxStatus": false
+      },
+      {
+        "id": "2-5",
+        "title": "Cutting of metal door frames into a reinforced concrete panel up to 15 cm",
+        "textTooltip": "If you want to cut a door opening into a load-bearing reinforced concrete panel (approx. 15-20 cm), you must count on 10 standard meters of cutting.",
+        "url": "",
+        "price": 294.4,
+        "units": "psc",
+        "visibleWhenLogin": false,
+        "visibleWhenProfi": false,
+        "checkbox": false,
+        "checkboxStatus": false
+      },
+      {
+        "id": "2-6",
+        "title": "Drilling a hole in a reinforced concrete panel up to 10 cm",
+        "textTooltip": "",
+        "url": "",
+        "price": 294.4,
+        "units": "psc",
+        "visibleWhenLogin": true,
+        "visibleWhenProfi": false,
+        "checkbox": false,
+        "checkboxStatus": false
+      },
+      {
+        "id": "2-7",
+        "title": "Drilling a hole in a reinforced concrete panel up to 15 cm",
+        "textTooltip": "",
+        "url": "",
+        "price": 294.4,
+        "units": "psc",
+        "visibleWhenLogin": true,
+        "visibleWhenProfi": false,
+        "checkbox": false,
+        "checkboxStatus": false
+      }
+    ]
+  },
+  {
+    "titleSection": "Masonry work Price",
+    "dataUpdated": "2025-04-01T07:05:09.686Z",
+    "id": "3",
+    "isBlockOpen": true,
+    "rows": [
+      {
+        "id": "3-1",
+        "title": "Masonry partitions up to 12.5 cm thick",
+        "textTooltip": "",
+        "url": "",
+        "price": 23,
+        "units": "m²",
+        "visibleWhenLogin": false,
+        "visibleWhenProfi": false,
+        "checkbox": false,
+        "checkboxStatus": false
+      },
+      {
+        "id": "3-2",
+        "title": "Wall and floor penetration",
+        "textTooltip": "Penetration is a binding coating that is used before screeding, painting, leveling the floor or under tiles/tiles.",
+        "url": "",
+        "price": 2.2,
+        "units": "m²",
+        "visibleWhenLogin": false,
+        "visibleWhenProfi": false,
+        "checkbox": false,
+        "checkboxStatus": false
+      },
+      {
+        "id": "3-3",
+        "title": "Meshing of brick partitions",
+        "textTooltip": "",
+        "url": "",
+        "price": 17.7,
+        "units": "m²",
+        "visibleWhenLogin": false,
+        "visibleWhenProfi": false,
+        "checkbox": false,
+        "checkboxStatus": false
+      },
+      {
+        "id": "3-4",
+        "title": "Wall plastering (lime-cement rough plaster)",
+        "textTooltip": "",
+        "url": "",
+        "price": 18.2,
+        "units": "m²",
+        "visibleWhenLogin": false,
+        "visibleWhenProfi": false,
+        "checkbox": false,
+        "checkboxStatus": false
+      },
+      {
+        "id": "3-5",
+        "title": "Wall coverings, thick coverings (Rimano, MVR Uni)",
+        "textTooltip": "",
+        "url": "",
+        "price": 15.6,
+        "units": "m²",
+        "visibleWhenLogin": false,
+        "visibleWhenProfi": false,
+        "checkbox": false,
+        "checkboxStatus": false
+      },
+      {
+        "id": "3-6",
+        "title": "Masonry of walls - thick construction up to 30 cm thick (Porotherm brick, Ytong)",
+        "textTooltip": "",
+        "url": "",
+        "price": 15.6,
+        "units": "m²",
+        "visibleWhenLogin": true,
+        "visibleWhenProfi": false,
+        "checkbox": false,
+        "checkboxStatus": false
+      },
+      {
+        "id": "3-7",
+        "title": "Masonry of walls - thick construction up to 30 cm thick (Porotherm brick, Ytong)",
+        "textTooltip": "",
+        "url": "",
+        "price": 15.6,
+        "units": "m²",
+        "visibleWhenLogin": true,
+        "visibleWhenProfi": false,
+        "checkbox": false,
+        "checkboxStatus": false
+      },
+      {
+        "id": "3-8",
+        "title": "Construction of Schiedel chimney with ceramic liner ",
+        "textTooltip": "Includes bonding of concrete blocks, installation of reinforcing steel rods, ceramic liner, and mineral insulation.",
+        "url": "",
+        "price": 15.6,
+        "units": "bm",
+        "visibleWhenLogin": true,
+        "visibleWhenProfi": false,
+        "checkbox": false,
+        "checkboxStatus": false
+      },
+      {
+        "id": "3-9",
+        "title": "Construction of fireclay brick chimney with ceramic liner ",
+        "textTooltip": "Fireclay bricks are fired bricks with extreme resistance to high temperatures, which are also used for the external construction of fireplaces. A ceramic liner is inserted into the chimney built in this way.",
+        "url": "",
+        "price": 15.6,
+        "units": "bm",
+        "visibleWhenLogin": false,
+        "visibleWhenProfi": false,
+        "checkbox": false,
+        "checkboxStatus": false
+      },
+      {
+        "id": "3-10",
+        "title": "Other unspecified jobs in this field (Hourly wage) ",
+        "textTooltip": "Works whose value cannot be determined by unit price (not listed in the price list above) are calculated at an hourly rate. If the work is non-standard, for example masonry of non-standard dimensions, painting of broken walls, etc. use the hourly rate.",
+        "url": "",
+        "price": 15.6,
         "units": "hour",
         "visibleWhenLogin": true,
         "visibleWhenProfi": false,

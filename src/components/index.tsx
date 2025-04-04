@@ -1,4 +1,5 @@
 import Header from "./Header";
+import Footer from "./Footer";
 import ChooseProgram from "./ChooseProgram";
 import Search from "./Search";
 import ConstructionBlock from "./Constructions/ConstructionBlock";
@@ -11,6 +12,7 @@ import SmartTooltip from "./ui/SmartTooltip";
 export {
   ChooseProgram,
   Header,
+  Footer,
   Search,
   ConstructionBlock,
   ConstructionCosts,

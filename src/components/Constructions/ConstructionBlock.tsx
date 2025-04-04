@@ -13,14 +13,14 @@ const ConstructionBlock: React.FC<ConstructionBlockProps> = ({ block }) => {
   const [isOpen, setIsOpen] = React.useState<boolean>(true);
 
   return (
-    <>
+    <div className="mb-4">
       <ConstructionTitle block={block} setIsOpen={setIsOpen} isOpen={isOpen} />
       <ConstructionRows
         rows={block.rows}
         setIsOpen={setIsOpen}
         isOpen={isOpen}
       />
-    </>
+    </div>
   );
 };
 
