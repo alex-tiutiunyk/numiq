@@ -16,7 +16,7 @@ const ConstructionCosts: React.FC = () => {
       <CostsTotal />
       <button
         type="button"
-        className="border-brand-orange bg-brand-gray-900 hover:bg-brand-orange mx-auto mb-6 block min-w-[366px] cursor-pointer rounded-xl border-2 p-2.5 font-bold text-white uppercase transition"
+        className="border-brand-orange bg-brand-gray-900 hover:bg-brand-orange mx-auto mb-6 block cursor-pointer rounded-xl border-2 p-2.5 font-bold text-white uppercase transition sm:min-w-[366px]"
       >
         Print the preliminary calculation
       </button>

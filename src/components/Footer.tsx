@@ -6,9 +6,9 @@ import React from "react";
 const Footer = () => {
   return (
     <footer className="bg-brand-gray-700 pt-7 pb-5">
-      <div className="mx-auto max-w-[1140px] px-[15px]">
-        <div className="flex gap-7.5 pb-8">
-          <div className="w-[23%] pt-1">
+      <div className="mx-auto max-w-[1140px] px-[20px]">
+        <div className="flex flex-col flex-wrap gap-5 pb-8 sm:flex-row sm:gap-7.5 md:flex-nowrap">
+          <div className="w-[100%] pt-1 md:w-[23%]">
             <Link href="/" className="transition hover:opacity-90">
               <Image
                 src={`${basePath}/images/logo.svg`}
@@ -18,7 +18,7 @@ const Footer = () => {
               />
             </Link>
           </div>
-          <div className="w-[14.5%]">
+          <div className="sm:w-[26%] md:w-[14.5%]">
             <h4 className="mb-2.5 font-bold">Information</h4>
             <nav>
               <ul>
@@ -41,7 +41,7 @@ const Footer = () => {
               </ul>
             </nav>
           </div>
-          <div className="w-[23%]">
+          <div className="sm:w-[26%] md:w-[23%]">
             <h4 className="mb-2.5 font-bold">Important links</h4>
             <nav>
               <ul>
@@ -72,7 +72,7 @@ const Footer = () => {
               </ul>
             </nav>
           </div>
-          <div className="grow">
+          <div className="sm:grow">
             <h4 className="mb-2.5 font-bold">Support</h4>
             <ul>
               <li className="mb-0.5">
@@ -87,11 +87,10 @@ const Footer = () => {
             </ul>
           </div>
         </div>
-        <div className="border-brand-gray-300 flex items-center justify-between border-t-1 pt-3.5">
-          <p className="m-0">&copy; 2025 NUMIQ</p>
-          <div className="flex items-center gap-6">
-            <span>Safe payment guarantee</span>
-            <ul className="flex items-center gap-6">
+        <div className="border-brand-gray-300 flex flex-col items-center justify-between gap-2 border-t-1 pt-3.5 md:flex-row md:gap-0">
+          <div className="flex flex-col items-center gap-2 md:order-1 md:flex-row md:gap-6">
+            <span className="order-1 md:order-0">Safe payment guarantee</span>
+            <ul className="order-0 flex flex-col items-center gap-2 sm:flex-row sm:gap-6 md:order-1">
               <li>
                 <Image
                   width={50}
@@ -126,6 +125,7 @@ const Footer = () => {
               </li>
             </ul>
           </div>
+          <p className="m-0 md:order-0">&copy; 2025 NUMIQ</p>
         </div>
       </div>
     </footer>

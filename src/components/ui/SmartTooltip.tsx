@@ -71,14 +71,14 @@ const SmartTooltip: React.FC<SmartTooltipProps> = ({
     return () => {
       window.removeEventListener("scroll", updateTooltipPosition);
     };
-  }, [tooltipHeight, visible]);
+  }, [tooltipHeight, visible, tooltipWrapRef]);
 
   return (
     <span
       ref={tooltipParentRef}
       onMouseEnter={() => setVisible(true)}
       onMouseLeave={() => setVisible(false)}
-      className="group z-[1] mt-0.5 ml-2 inline-block h-4 w-4 bg-[url('../../public/icons/info.png')] [background-size:33px_16px] align-top hover:[background-position:_-17px_0]"
+      className="group z-[1] mt-0.5 ml-2 hidden h-4 w-4 bg-[url('../../public/icons/info.png')] [background-size:33px_16px] align-top hover:[background-position:_-17px_0] lg:inline-block"
     >
       <span
         ref={tooltipRef}
