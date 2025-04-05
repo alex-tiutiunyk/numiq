@@ -36,7 +36,7 @@ const ChooseProgram: React.FC = () => {
 
   return (
     <section className="flex gap-23 py-[63px_50px]">
-      <div className="w-[48%]">
+      <div className="w-full lg:w-[48%]">
         <h1 className="text-brand-gray-40 my-[0_32px] text-[40px] leading-[1.2] font-normal">
           Construction price list 2025
         </h1>
@@ -72,7 +72,7 @@ const ChooseProgram: React.FC = () => {
           </span>
         </footer>
       </div>
-      <div className="grow pt-8">
+      <div className="hidden grow pt-8 lg:block">
         <Image
           width={486}
           height={320}

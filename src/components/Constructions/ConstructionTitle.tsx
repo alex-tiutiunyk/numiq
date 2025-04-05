@@ -19,7 +19,7 @@ const ConstructionTitle: React.FC<ConstructionTitleProps> = ({
 
   return (
     <div className="bg-brand-gray-100 text-brand-gray-30 relative flex rounded-t-[20px] p-4 pr-0 leading-[20px]">
-      <div className="flex grow gap-4">
+      <div className="flex max-w-[52%] grow gap-4 lg:max-w-[61%]">
         <h2 className="text-base leading-[20px] font-bold uppercase">
           {block.titleSection}
         </h2>
@@ -34,7 +34,7 @@ const ConstructionTitle: React.FC<ConstructionTitleProps> = ({
         <span className="mt-[1px] ml-1 inline-block h-4 w-4 cursor-pointer bg-[url('../../public/icons/info.png')] [background-size:33px_16px] align-top hover:bg-[-17px_0px]"></span>
       </div>
       <div className="w-[13%] text-center">Quantity</div>
-      <div className="w-[13%] text-center">Sum</div>
+      <div className="w-[22%] text-center lg:w-[13%]">Sum</div>
       {block.rows.length > 2 && (
         <button
           type="button"

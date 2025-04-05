@@ -33,7 +33,7 @@ const ConstructionRow: React.FC<ConstructionRowProps> = ({ row }) => {
     <div className="group/row bg-brand-gray-500 hover:bg-brand-gray-200 border-brand-gray-160 flex items-center justify-center border-b px-4 pr-0 leading-[20px] transition select-none last:rounded-b-[20px] hover:text-white">
       <div
         ref={tooltipWrapRef}
-        className="flex max-w-[61%] grow gap-4 py-3.5 transition"
+        className="flex max-w-[52%] grow gap-4 py-3.5 transition lg:max-w-[61%]"
       >
         <p className="m-0">
           {url ? (
@@ -79,7 +79,7 @@ const ConstructionRow: React.FC<ConstructionRowProps> = ({ row }) => {
               value={inputValue}
               max={99999}
               onChange={(event) => handleChange(event)}
-              className="placeholder:text-brand-gray-100 text-brand-gray-100 group-hover/row:bg-brand-gray-10 w-[80px] rounded-l-[3px] bg-white p-2 text-center text-sm focus:outline-0"
+              className="placeholder:text-brand-gray-100 text-brand-gray-100 group-hover/row:bg-brand-gray-10 w-[40px] rounded-l-[3px] bg-white p-2 text-center text-sm focus:outline-0 lg:w-[80px]"
             />
             <span className="group group-hover/row:bg-brand-gray-10 text-brand-gray-100 border-brand-gray-15 relative w-[50px] rounded-r-[3px] border-l bg-white p-2 text-center text-sm">
               {units}
@@ -94,7 +94,7 @@ const ConstructionRow: React.FC<ConstructionRowProps> = ({ row }) => {
           </>
         )}
       </div>
-      <div className="w-[13%] justify-center px-2 text-center">
+      <div className="w-[22%] justify-center px-2 text-center lg:w-[13%]">
         {row.visibleWhenLogin ? (
           <Link
             href="/registration"
