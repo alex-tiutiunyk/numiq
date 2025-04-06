@@ -6,7 +6,7 @@ import React from "react";
 const Footer = () => {
   return (
     <footer className="bg-brand-gray-700 pt-7 pb-5">
-      <div className="mx-auto max-w-[1140px] px-[20px]">
+      <div className="mx-auto max-w-[1140px] px-4 sm:px-5">
         <div className="flex flex-col flex-wrap gap-5 pb-8 sm:flex-row sm:gap-7.5 md:flex-nowrap">
           <div className="w-[100%] pt-1 md:w-[23%]">
             <Link href="/" className="transition hover:opacity-90">

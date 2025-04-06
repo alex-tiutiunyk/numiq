@@ -12,7 +12,7 @@ const Header: React.FC = () => {
 
   return (
     <header className="bg-brand-gray-700 relative z-10">
-      <div className="mx-auto flex max-w-[1140px] items-center justify-between px-5">
+      <div className="mx-auto flex max-w-[1140px] items-center justify-between px-4 sm:px-5">
         <Link href="/" className="transition hover:opacity-90">
           <Image
             src={`${basePath}/images/logo.svg`}
